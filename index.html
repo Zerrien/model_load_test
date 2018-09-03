@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				background-color: black;
+			}
+			#progBarContainer {
+				position: absolute;
+				top: 80%;
+				left: 50%;
+				width: 25%;
+				color: white;
+				text-align: center;
+				transform: translateX(-50%);
+				font-family: monospace;
+			}
+			#progBar {
+				position: relative;
+				border: 1px solid white;
+				border-radius: 16px;
+			}
+			#progBarProg {
+				margin: 4px;
+				background-color: white;
+				border-radius: 8px;
+				height: 1em;
+				width: 0%;
+			}
+			#progBarProgText {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				color: white;
+    		mix-blend-mode: difference;
+			}
+			.fadeAway {
+				transition: opacity 2s;
+				opacity: 0;
+			}
+			#buttonContainer {
+				position: absolute;
+				top: 10%;
+				left: 10%;
+			}
+			.button {
+				border: 1px solid white;
+				border-radius: 8px;
+				padding: 4px;
+				color: white;
+				cursor: pointer;
+			}
+			.button:hover {
+				background-color: gray;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="buttonContainer">
+			<div class="button" id="buttonA" onclick="testA()">Run test A</div>
+			<div class="button" id="buttonB" onclick="testB()">Run test B</div>
+		</div>
+		<div id="progBarContainer">
+			<div id="progBarText">Waiting...</div>
+			<div id="progBar">
+				<div id="progBarProgText">0%</div>
+				<div id="progBarProg">
+				</div>
+			</div>
+		</div>
+		<script src="./bundle.js"></script>
+	</body>
+</html>

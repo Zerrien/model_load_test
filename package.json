@@ -1,0 +1,30 @@
+{
+  "name": "model_load_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas-prebuilt": "^1.6.5-prerelease.1",
+    "jquery": "^3.3.1",
+    "node-gzip": "^1.1.2",
+    "stanford-dragon": "^1.1.1",
+    "three": "^0.94.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-destructuring": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.1",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "puppeteer": "^1.7.0",
+    "webpack": "^4.17.1"
+  }
+}
