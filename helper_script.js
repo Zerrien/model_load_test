@@ -20,7 +20,7 @@ for(var i = 0; i < indices.length; i += 3) {
 }
 
 console.log("i2", indices2.length);
-shuffle(indices2);
+//shuffle(indices2);
 console.log(indices2[0])
 indices = indices2.reduce((acc, elem) => {acc.push(...elem); return acc;}, []);
 console.log(indices[0])
@@ -58,7 +58,7 @@ buff.write(vertCount.toString());
 buff.write(indexCount.toString());
 console.log(buff);
 */
-var stream = fs.createWriteStream('test3.ply3', {encoding: 'binary'});
+var stream = fs.createWriteStream('test4.ply3', {encoding: 'binary'});
 
 stream.write(Buffer.from(new Int8Array(new Int32Array([vertCount]).buffer)));
 stream.write(Buffer.from(new Int8Array(new Int32Array([indexCount]).buffer)));

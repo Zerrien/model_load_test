@@ -28,13 +28,13 @@ $(function() {
 window.testA = function() {
 	const sTime = Date.now();
 	var x = new THREE.PLYLoader()
-	x.load("dragon_vrip.ply.gz", function(geometry) {
+	x.load("dragon_vrip.ply", function(geometry) {
 		console.log(geometry);
 		console.log("Loaded.");
 		//geometry.computeVertexNormals();
 		var material = new THREE.MeshStandardMaterial( { color: 0x00ff55, flatShading: true } );
 		mesh = new THREE.Mesh( geometry, material );
-		mesh.scale.multiplyScalar(10 );
+		mesh.scale.multiplyScalar(10);
 		scene.add( mesh );
 		requestAnimationFrame(animate);
 		console.log(Date.now() - sTime);
