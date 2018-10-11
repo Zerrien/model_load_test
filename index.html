@@ -55,14 +55,21 @@
 			.button:hover {
 				background-color: gray;
 			}
+			#warning {
+				color: white;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
 		</style>
 	</head>
 	<body>
-		<!--
+		<div id="warning">Refresh the pages between tests! (Sorry.)</div>
 		<div id="buttonContainer">
-			<div class="button" id="buttonA" onclick="testA()">Run test A</div>
-			<div class="button" id="buttonB" onclick="testB()">Run test B</div>
+			<div class="button" id="buttonA" onclick="testA()">Run test A (Default PLYLoader)</div>
+			<div class="button" id="buttonB" onclick="testB()">Run test B (Binary Format Streaming)</div>
 		</div>
+		<!--
 		<div id="progBarContainer">
 			<div id="progBarText">Waiting...</div>
 			<div id="progBar">
